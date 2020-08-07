@@ -1,0 +1,300 @@
+@charset "UTF-8";
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+div#wrap{
+    margin: 0 auto;
+    text-align: center;
+    width: 1200px;
+
+}
+
+
+/* 헤더 영역 시작  */
+header#header{
+    position: relative;
+    margin-top: 25px;
+    height: 140px;
+    text-align: center;
+}
+header #bookmark{
+    position: absolute;
+    top: 0;
+    left:0;
+    margin-top: 5px;
+    margin-left: 5px;
+    display: inline-block;
+    font-size: 11px;
+    font-weight: bold;
+    color: #696262;
+}
+
+header #bookmark span{
+  background: url(../images/bookmark_Icon_01.gif)  no-repeat;
+    padding-left: 18px;
+}
+
+header #logo{
+    margin-top: 45px;
+}
+
+header #lnb{
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 14px;
+    font-weight: bold;
+    color: #8d8e8d;
+    margin-right: 3px;
+}
+header #lnb ul{
+    list-style: none;
+    margin-top: 3px;
+}
+header #lnb ul li{
+    display: inline-block;
+}
+header input#search{
+    position: absolute;
+    border: 1px solid #ccc;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-size: 18px;
+    top: 90px;
+    right: 5px;
+    outline: 0;
+    width: 175px;
+    height: 30px;
+    padding-right: 26px;
+    background-repeat:no-repeat;
+    background-position: 130px;
+    background-image: url( '/images/search_Img_01.gif');
+    background-repeat: no-repeat;
+    background-position: 150px;
+}
+
+header img#searchImg {
+    position: absolute;
+    right:5px;
+    top: 93px;
+    z-index: 1;
+}
+
+/* 헤더 영역 끝  */
+/* GNB 영역 시작  */
+div#gnb {
+    position: relative;
+    height: 60px;
+}
+
+div#gnb ul{
+    position: absolute;
+    left: 3px;
+  list-style: none;
+}
+div#gnb ul li{
+    border: 1px solid #393a3f;
+    display: inline-block;
+    float: left;
+    font-size: 15px;
+    padding-top: 18px;
+    width: 142px;
+    height: 60px;
+    font-weight: bold;
+    background-color:#3e4347;
+    color: white;
+}
+div#gnb ul li:hover{
+    color: #f3ff00;
+}
+
+div#gnb ul li:first-child{
+    width: 55px;
+
+}
+/* GNB 영역 끝  */
+/* 로케이션 영역 시작  */
+div#locater{
+    height: 100px;
+    border-bottom: 1px solid #e5e5e5;
+    text-align: left;
+    line-height: 100px;
+    padding-left: 5px;
+    font-size: 12px;
+}
+
+
+/* 로케이션 영역 끝  */
+/* 컨텐츠 영역1 시작  */
+content{
+    display: flex;
+    height: 500px;
+}
+content #item_view{
+    flex: 1;
+    height: 100%;
+    text-align: center;
+}
+
+content #item_view img#item{
+     margin-top: 12%;
+    margin-left: 25%;
+    display: block;
+}
+content div#extendImg{
+    cursor: pointer
+}
+
+/* 컨텐츠 영역1 끝  */
+/* 컨텐츠 영역2 시작  */
+content #infoArea{
+    flex: 1;
+}
+
+content #infoBox{
+    margin: 0 auto;
+    margin-top: 13%;
+    width: 290px;
+    height: 310px;
+    text-align: left;
+}
+content #infoBox #orderInfo{
+    width: 280px;
+    margin-left: 2px;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+content #infoBox p#point{
+    margin-top: 30px;
+    font-size: 13px;
+    margin-bottom: 6px;
+}
+content #infoBox p#price{
+    font-size: 13px;
+
+}
+content #infoBox #orderInfo span#itemName{
+    font-size: 12px;
+    height: 30px;
+    color: #848484;
+    font-weight: bold;
+}
+
+content #infoBox #orderInfo tr{
+    border: 1px solid #dfdfdf;
+
+}
+content #infoBox #orderInfo td{
+  padding: 8px;
+    line-height: 11px;
+}
+
+content #infoBox #orderInfo td #itemPrice{
+  font-size: 13px;
+    font-weight: bold;
+    display:inline-block;
+    width: 70px;
+}
+
+content #infoBox #orderInfo td #total{
+    font-size: 13px;
+    text-align: right;
+}
+content #infoBox #orderInfo td span#priceTotal{
+    display:inline-block;
+    width: 62px;
+}
+
+span.won{
+    font-size: 13px;
+}
+
+content span.red{
+    color: red;
+    font-weight: bold;
+}
+
+content #infoBox #orderInfo td:first-child{
+    width: 135px;
+}
+content #infoBox #orderInfo td:last-child{
+    text-align: right;
+}
+content #infoBox #orderInfo input#number{
+    width: 35px;
+    height: 25px;
+    padding: 5px;
+    border: 1px solid #e3e3e3;
+    text-align: right;
+    outline: 0;
+}
+
+content #infoBox #orderInfo div#updown{
+    display: inline-block;
+    height: 13px;
+}
+content #infoBox #orderInfo div#updown #up{
+  position: absolute;
+
+}
+content #infoBox #orderInfo div#updown #down{
+  position: absolute;
+  margin-top: 10px;
+}
+
+content #infoBox div#sns{
+    padding: 5px 2px;
+}
+
+content #infoBox div#orderBtn{
+    margin-top: 30px;
+    padding-left: 3px;
+}
+
+
+/* 컨텐츠 영역2 끝  */
+
+
+/* div#modalArea 시작_ */
+
+div#modalArea {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+}
+
+/* div#popUpArea 시작 */
+
+div#popUpArea {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+div#closePopUp {
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 40px;
+
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    cursor: pointer;
+}
+/* div#modalArea 끝 */
